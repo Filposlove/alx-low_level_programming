@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	char alp(52) = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char alp(52) ="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i;
 
 	for(i = 0; i < 52; i++);
 	{
 		printf(alph[i]);
 	}
-	return 0;
+	return ('\n');
 }
