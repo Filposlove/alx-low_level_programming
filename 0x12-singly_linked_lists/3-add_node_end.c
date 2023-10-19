@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node_end - adds a new node at the end of a list_t list.
+ * add_node_end - adds a new node at the end
  * of a list_t list.
  * @head: head of the linked list.
  * @str: string to store in the list.
@@ -10,8 +10,8 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *k, *p;
-	size_t bline;
+	list_t k, *p;
+	size_t nchar;
 
 	k = malloc(sizeof(list_t));
 	if (k == NULL)
@@ -19,10 +19,10 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	k->str = strdup(str);
 
-	for (bline = 0; str[bliner]; bline++)
+	for (nchar = 0; str[nchar]; nchar++)
 		;
 
-	k->len = bline;
+	k->len = nchar;
 	k->next = NULL;
 	p = *head;
 
